@@ -48,6 +48,15 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: NexaBold;
+    src: url(fonts/NexaBold.otf);
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url(fonts/NexaLight.otf);
+}
 /* h1, h2, h3, h4, p, a, main, nav, li, article*/
 
 
@@ -63,7 +72,7 @@ h2{
 }
 
 h1, h2, h3, h4, a, li, nav, label {
-    font-family: Nexa Bold;
+    font-family: NexaBold;
 }
 
 nav {
@@ -71,7 +80,7 @@ nav {
 }
 
 p{
-    font-family: Nexa Light;
+    font-family: NexaLight;
     font-size: 1em;
 }
 
