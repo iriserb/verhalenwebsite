@@ -1032,11 +1032,11 @@ BRON: W3C SCHOOL
     
     #jeroenkrabbe img:nth-child(3){
         display:block;
-            padding-top: 3.750em;
+        padding-top: 3.750em;
     }
 }
 
-@media only screen and (max-width: 48.000em) {
+@media only screen and (max-width: 48.000em) and (min-width: 26.563em) {
     #jeroenkrabbe img:nth-child(1){
         display: none;
     }
@@ -1081,7 +1081,7 @@ BRON: W3C SCHOOL
     }
 }
 
-@media only screen and (max-width: 48.000em) {
+@media only screen and (max-width: 48.000em) and (min-width: 26.563em) {
     #gefrustreerd img:nth-child(1){
         display: none;
     }
@@ -1126,7 +1126,7 @@ BRON: W3C SCHOOL
     }
 }
 
-@media only screen and (max-width: 48.000em) {
+@media only screen and (max-width: 48.000em) and (min-width: 26.563em) {
     #paranoia  img:nth-child(1){
         display: none;
     }
