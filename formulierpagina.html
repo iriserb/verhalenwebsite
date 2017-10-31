@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulierpagina</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="formulier">
+ <header>
+       <div>
+           <a href="index.html"><img src="images/icons/transavialogo.svg" alt="facebook"></a>
+           <h1>Transavia</h1>
+       </div>
+    
+        <nav id="header"> 
+            <ul>
+               <li><a href="#"> <img src="images/icons/hartje.png" alt="hartje icoon"></a></li>
+                <li><a href="formulierpagina.html"><img src="images/profiel.png" alt="profiel"></a></li>
+                <li><a href="index.html"><img src="images/icons/huisje.png" alt="homeknop"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+  <main class="login">
+    <section>
+       <div>
+        <h1>Inloggen</h1>
+        <p>Vul je e-mailadres en wachtwoord in om in te loggen</p>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="gebruiker@domein.nl">
+        
+        <label for="password">Wachtwoord</label>
+        <input type="password" id="password">
+        <input type="radio" onclick="myFunction()">
+        <label class="radioLabels" for="password">Laat wachtwoord zien</label>
+        
+        <a href="#" id="ww"><p>Wachtwoord vergeten?</p></a>
+        
+        <button id="inloggenB">Inloggen</button>
+        
+        </div>
+    </section>
+    
+    <section>
+    <div>
+    <h1>Aanmelden</h1>
+    <p> Wat leuk dat je je aanmeld voor onze verhalenpagina</p>
+    <form>
+        <label for="firstname">Voornaam</label>
+        <input type="text" id="firstname">
+        
+        <label for="lastname">Achternaam</label>
+        <input type="text" id="lastname"  placeholder="b.v. Jansen">
+      <div>
+        <input type="radio" name="gender" id="female" value="female">
+        <label class="radioLabels" for="female">Vrouw</label>
+    
+        <input type="radio" name="gender" id="male" value="male">
+        <label class="radioLabels" for="male">Man</label>
+        </div>
+       
+        <label for="email">Email</label>
+        <input type="email" id="email2">
+       
+        <label for="password">Wachtwoord</label>
+        <input type="password" id="password2">
+        
+        <label for="password-verification">Herhaal wachtwoord</label>
+        <input type="password" id="password-verification">
+        
+        </form>
+         <button id="aanmeldenBtn">Aanmelden</button>
+        </div>
+      </section>
+   </main>
+   <footer id="footerFormulier">
+        <!--<small>&copy; 2017</small>-->
+        <a>Algemene voorwaarden</a>
+        <a>Over ons</a>
+        <a href="index.html">Transavia</a>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

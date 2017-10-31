@@ -1,0 +1,1133 @@
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* h1, h2, h3, h4, p, a, main, nav, li, article*/
+
+
+h1{
+    text-align: left;
+    display:inline;
+    color: #00D66C;
+    font-size: 1.875em;
+}
+
+h2{
+    height:1.250em;
+}
+
+h1, h2, h3, h4, a, li, nav, label {
+    font-family: Nexa Bold;
+}
+
+nav {
+    text-align: right;
+}
+
+p{
+    font-family: Nexa Light;
+    font-size: 1em;
+}
+
+a {
+     text-decoration: none;    
+}
+
+a:visited {
+  color: #2a03a1;
+}
+
+main img{
+    display:inline;
+    border-radius: 0.438em;
+    box-shadow: 0.313em 0.375em 0.313em #8d8d8d;
+}
+
+footer{
+    background-color: #00d66c;
+    height: 1.875em;
+    padding-top: 0.938em;
+}
+
+footer a{
+    float: right;
+    padding-right: 0.938em;
+    color: #fff;
+}
+
+footer a:hover{
+   color: #ff396e;
+}
+
+#footerFormulier{
+    background-color: #fff;
+    display: block;
+}
+
+#footerFormulier a{
+    color: #00d66c;
+}
+
+#footerFormulier a:hover{
+    color: #ff396e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    flex: 0 0 auto;
+}
+
+nav#header li:first-child {
+    margin-right: 0.625em;
+    margin-top: 1.250em;
+}
+
+nav#header li:nth-child(2) {
+    margin-right: 0.313em;
+    margin-top: 1.250em;
+}
+
+nav#header li:nth-child(3) {
+    margin-right: 1.250em;
+    margin-top: 0.625em;
+}
+
+nav#header li:nth-child(3) img {
+    height: 2.500em;
+}
+
+#sticky-header {
+    width: 100%;
+    position: fixed;
+}
+header > div {
+    display: flex;
+    align-items: center;
+    margin-left: 0.813em;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+#header img{
+    height:1.250em;
+    display:inline-flex;
+}
+
+#header ul{
+    display:inline-flex;
+}
+
+
+/*BOVENKANT VAN DE PAGINA*/
+
+.bovenkant{
+    background-color: #eddacc;
+    width: 100%;
+    display:flex;
+    margin: 0;
+    padding-bottom: 1.563em;
+    padding-top: 3.750em;
+}
+
+.bovenkant section h2 {
+    margin: 1.563em 0 0 1.563em;
+}
+
+.bovenkant section:nth-child(2) {
+    margin-left: 1.875em;
+}
+
+.bovenkant section:nth-child(2) > div {
+    display: flex;
+}
+
+.bovenkant h3{
+    margin: 1.250em 0 0 1.563em;
+}
+.bovenkant img{
+    margin: 0.625em 0 0 1.563em;
+    display:block;
+}
+
+.bovenkant section:nth-child(2) p {
+    margin: 0.625em 0 0 1.563em;
+    padding: 0 1.875em 0 0;
+}
+
+article{
+     width: 100%;
+     display: flex;
+}
+
+.zombie{
+    display:flex;
+}
+
+article.zombie div:nth-child(2) a img {
+    box-shadow: none;
+    width: 6.250em;
+}
+
+a.lees-verder{
+    margin: 0.625em 0 0 1.563em;
+    display: block;
+} 
+
+/* media queries*/
+
+@media only screen and (max-width: 31.375em) {
+    .bovenkant {
+        display: block;
+    }
+    
+    h2 {
+        padding-top:0.625em;
+    }
+    
+    .bovenkant section:nth-child(2){
+        margin:0;
+        display: none;
+        width: 26.875em;
+    }
+}
+
+
+ @media screen and (max-width: 48.000em) and (min-width:26.563em) {
+   .bovenkant {
+        display: flex;
+    }
+     
+     #telegrafisch{
+        margin:0;
+        display: none;
+        width: 26.875em;
+    }
+}
+        
+
+/* SORTEREN, FILTEREN, ZOEKEN*/
+.keuzemenu a  {
+    color:#fff;
+    font-size: 5.7em;  
+}
+
+ul.keuzemenu {
+    padding: 0;
+    margin: 1.250em 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.keuzemenu li{
+    width: 100%;
+    border-radius: 0.625em;
+    height: 20vmax;
+    margin: 0.063em;
+    display: block;
+}
+
+.sorteren {
+    background-color: #ff396e;
+    display:flex;
+}
+
+.sorteren ul{
+    display: flex;
+}
+
+#sorteren h2{
+    width:6.250em;
+    height: 1.250em;
+    padding: 0.625em;
+}
+
+#sorteren li{
+  padding: 0.625em;
+}
+
+#sorteren h3{
+  padding: 0.625em;
+}
+.filteren {
+    background-color: #2a03a1;
+    display:flex;
+}
+
+.filteren ul{
+    display: inline-block;
+}
+
+#filteren h2{
+    height: 1.250em;
+    padding: 0.625em;
+}
+
+#filteren li{
+  padding: 0.625em;
+}
+
+#filteren h3{
+  padding: 0.625em;
+}
+
+ul#filterList {
+    display: inline-block;
+    height: 1.875em;
+    width:100%;  
+    margin-top: 0.625em;
+}
+
+ul#filterList li {
+    background-color: #2a03a1;
+    height: 1.438em;
+    width: 6.875em;
+    border-radius: 1.25em;
+    padding-top: 0.313em;
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.313em;
+    box-shadow: 0 0.1875em 0.0625em #2a03a1;
+    padding-top: 0.625em;
+    display: inline-block;
+    margin-right: 0.938em;
+}
+
+ul#filterList h3 {
+    text-align: center;  
+}
+
+#selectedFilters{
+    margin-left: 1.250em;
+}
+
+.zoeken{
+    background-color: #00d66c;
+}
+
+#zoeken h2{
+     padding-left: 1.125em;
+    height: 1.563em;
+}
+
+/* SORTEREN, FILTEREN, ZOEKEN MODAL - SOURCE: https://www.w3schools.com/howto/howto_css_modals.asp */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*Style for tiles in modal boxes*/
+.modal-content ul > li > img {
+    border: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 1.250em;
+    border: 0.063em solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 0.438em;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1.750em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.filterenClose, .sorterenClose, .zoekenClose {
+    color: #aaa;
+    float: right;
+    font-size: 1.750em;
+    font-weight: bold;
+}
+
+.filterenClose, .sorterenClose, .zoekenClose:hover,
+.filterenClose, .sorterenClose, .zoekenClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content section ul {
+    display: flex;
+}
+
+a#buttonFilterenModal, a#buttonSorterenModal, a#buttonZoekenModal {
+    cursor: pointer;
+    display: block;
+        padding-top: 3.750rem;
+}
+
+/* END SORTEREN, FILTEREN, ZOEKEN MODAL*/
+
+/* media queries*/
+
+@media only screen and (max-width: 26.563em) {
+    .keuzemenu li {
+        width:100%;
+        height: 11.5em;
+        margin-bottom: 0.625em;
+    }
+    
+    ul.keuzemenu {
+        display: block;
+        justify-content: space-between;
+        font-size: 0.625em;
+    }
+    
+    #categories {
+    display: inline-block;
+}
+    
+    ul.keuzemenu a {
+        display:block;
+    }
+    
+    ul#filterList li {
+    background-color: #2a03a1;
+    height: 1.438em;
+    width: 6.875em;
+    border-radius: 1.25em;
+    padding-top: 0.313em;
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.313em;
+    box-shadow: 0 0.1875em 0.0625em #2a03a1;
+    padding-top: 0.625em;
+    display: block;
+    margin-right: 0.938em
+}
+    a#buttonFilterenModal, a#buttonSorterenModal, a#buttonZoekenModal {
+    padding-top: 1.875rem;
+}
+}
+
+@media only screen and (max-width: 38.125em) {
+    .keuzemenu {
+        flex-wrap: wrap;
+    }
+    .bovenkant section:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .modal-content img {
+    width: 3.750em;
+    display: block;
+    }
+    #filteren li{
+        padding:0;
+        margin:0.313em;
+    }
+    .modal-content section ul {
+    display: flex;
+}
+    
+    #categories {
+    display: inline-block;
+}
+}
+
+
+@media screen and (max-width: 48.000em) and (min-width:26.563em) {
+   .keuzemenu li {
+        width:100%;
+        height: 22.5em;
+        margin-bottom: 0.625em;
+    }
+
+    .bovenkant section:nth-child(2) article div:nth-child(2) {
+        display: none;
+    }
+    
+    ul.keuzemenu {
+        display: flex;
+        justify-content:0;
+        font-size: 0.500em;  
+    }
+    
+    #categories {
+    display: flex;
+}
+    
+    #filteren h3 {
+    padding: 0.313em;
+    font-size: 0.750em;
+}
+    #filteren li{
+        padding-left: 0.938em;
+    }
+    
+}
+
+@media screen and (max-width: 58.063em) {
+    ul.keuzemenu a {
+        font-size: 3.7rem;
+    }
+    
+    #categories {
+    display: flex;
+}
+    #filteren h3 {
+    padding: 0.313em;
+    font-size: 0.750em;
+}
+}
+
+.stories2{
+    margin: 0;
+}
+
+.stories2 > h2 {
+    margin: 0 0 0 1.563em;
+    margin-top: 1.250em;
+}
+
+.stories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1.250em;
+    width:100%;
+}
+
+ul.stories li:nth-child(odd), ul.stories li:nth-child(even) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.stories li:nth-child(odd) {
+    background-color: #eddacc;
+}
+
+ul.stories li:nth-child(even){
+    background-color: #fff;
+}
+
+li.list {
+    min-width: 33.333333%;
+}
+
+.list h4 {
+    margin: 1.250em 0 0.938em 0;
+    height: 9.375em;
+}
+
+li.list div a:first-child {
+    display: block;
+}
+
+li.list div:nth-child(2) img {
+    box-shadow: none;
+    height: 1.063em;
+    display: flex;
+    padding-bottom: 0.625em;
+}
+
+li.list div:nth-child(2) {
+    padding-right: 1.250em;
+}
+
+.iconen{
+    display: inline-block;
+    float:right;
+    margin-top: -7.500em;
+}
+
+.iconen img:nth-child(2) {
+    margin-bottom:0.625em;
+    margin-top: 15.000em;
+    margin-left: 5.000em;
+}
+
+.iconen img:nth-child(1) {
+    margin-bottom:7.500em;
+}
+
+.list div a:first-child img {
+    margin: 0.938em 1.563em;
+}
+
+.list div a:nth-child(2) img {
+    margin: 0 0 0.938em 1.563em;
+}
+
+/* media queries*/
+
+@media only screen and (max-width: 26.563em) {
+      li.list {
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width: 66.750em) {
+    .bovenkant section:nth-child(2) article:nth-child(2) {
+        display: none;
+    }
+}
+
+/*iPad Pro */
+@media screen and (max-width: 67.813em) {
+    .list h4 {
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 65.188em) and (min-width: 43.500em) {
+    
+    li.list {
+        min-width: 50%;
+    }
+    li.list:nth-child(1) {
+        order: 1;
+    }
+    li.list:nth-child(2) {
+        order: 2;
+    }
+    li.list:nth-child(3) {
+        order: 4;
+    }
+    li.list:nth-child(4) {
+        order: 3;
+    }
+    li.list:nth-child(5) {
+        order: 5;
+    }
+    li.list:nth-child(6) {
+        order: 6;
+    }
+    li.list:nth-child(7) {
+        order: 99;
+    }
+    li.list:nth-child(8) {
+        order: 9;
+    }
+    li.list:nth-child(9) {
+        display: none!important;
+    }
+    
+}
+
+@media screen and (max-width: 43.500em) {
+    li.list {
+        min-width: 100%;
+    }
+}
+
+
+/* FORMULIERPAGINA*/
+
+.formulier {
+    background-color: #00d66c;
+    justify-content: center;
+    width:100%;
+}
+
+.formulier main h1{
+    margin-top: 1em;
+    text-align: center;
+    display: block;
+    color:#2a03a1;
+}
+
+.formulier p{
+    margin: 1.563em;
+    margin-top: 1.875em;
+    margin-left: 0.938em;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    margin: 3.125em 0;
+}
+
+.login section:first-child {
+    background-color: #fff; 
+    border-radius: 0.525em 0em 0em 0.525em;
+}
+
+.login section:nth-child(2){
+    background-color: rgb(232, 239, 252);
+    border-radius: 0em 0.525em 0.525em 0em;
+}
+
+input[type=submit] {
+    background-color: #ff396e;
+    color: #fff;
+    border-radius: 1.25em;
+    border:none;
+    margin: 0;
+    margin-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.0em;
+    line-height: 1.5em;
+    cursor: pointer;
+    display: inline-block;
+    padding: .4375em 1.5em .5625em;
+    font-size: 0.938em;
+    box-shadow: 0 0.1875em 0.0625em #ca2b55;
+    transition: background-color .2s linear;
+}
+
+input[type=text],input[type=email], input[type=password] {
+    width: 80%;
+    height: 0.188em;
+    display: block;
+    min-height: 2.0em;
+    padding: 0 .5em;
+    margin:0;
+    margin-bottom: 0.625em;
+    margin-left:1em;
+    box-sizing: border-box;
+    border: 0.0625rem solid #555;
+    border-radius: 0.5em;
+    font-size: 1em;
+    color:#000;
+}
+
+input:focus {
+    border:0.094em solid #2a03a1;
+}
+
+input:focus{
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+input[type=submit]:hover{
+    background: rgba(255, 57, 110, 0.7);
+}
+
+input[type=submit]:disabled {
+    color:grey;
+}
+
+input[type=radio]{
+    display: inline;
+    margin-left: 1.250em;
+    margin-bottom: 0.625em;
+    margin-right: 0;
+}
+
+input[type=radio]:checked{
+    color:red;
+}
+
+.radioLabels{
+    margin:0;
+}
+
+#ww:hover{
+   color: #ff396e;
+}
+
+label{
+    margin-left: 1em;
+    color:#202020;
+    display: inline;
+}
+
+/* media queries*/
+
+/* mobiel*/
+
+@media only screen and (max-width:26.563em){
+    .login {
+        display:block;
+        margin-left: 0.938em;
+        margin-right: 0.938em;
+        border-radius: 0.525em;
+    }
+    
+    .formulier{
+        margin:0;
+    }
+    
+    .formulier h1{
+        padding-top:1.250em;
+    }
+    
+    .login section:first-child {
+        border-radius: 0.525em;
+    }
+    
+    .login section:nth-child(2){
+        border-radius: 0.525em;
+    }
+}
+    
+/*tablet*/
+   @media screen and (max-width: 37.375em) and (min-width:26.563em) {
+    .login{
+        display: block;
+        padding-left: 1.250em;
+        padding-right:1.250em;
+    }
+        
+        .formulier{
+        margin:0;
+    }
+        
+        .formulier h1{
+             padding-top:1.250em;
+        }
+    
+    .login section:first-child {
+        border-radius: 0.525em;
+    }
+    
+    .login section:nth-child(2){
+        border-radius: 0.525em;
+    }
+}
+
+ @media screen and (max-width: 49.750em) and (min-width:37.375em) {
+    .login{
+        display: block;
+        padding-right:1.250em;
+        padding-left:1.250em;
+    }
+        
+        .formulier{
+        margin:0;
+    }
+        
+        .formulier h1{
+             padding-top:1.250em;
+        }
+    
+    .login section:first-child {
+        border-radius: 0.525em;
+    }
+    
+    .login section:nth-child(2){
+        border-radius: 0.525em;
+    }
+}
+
+@media screen and (max-width: 54.000em) and (min-width:50.063em) {
+    .login{
+        padding-right:1.875em;
+        padding-left:1.875em;
+    }
+        
+        .formulier{
+        margin:0;
+    }
+        
+        .formulier h1{
+             padding-top:1.250em;
+        }
+    
+    .login section:first-child {
+    border-radius: 0.525em 0em 0em 0.525em;
+}
+
+.login section:nth-child(2){
+    background-color: rgb(232, 239, 252);
+}
+}
+
+button{
+    background-color: #ff396e;
+    color: #fff;
+    border-radius: 1.25em;
+    border:none;
+    margin: 0;
+    margin-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.0em;
+    line-height: 1.5em;
+    cursor: pointer;
+    display: inline-block;
+    padding: .4375em 1.5em .5625em;
+    font-size: 0.938em;
+    box-shadow: 0 0.1875em 0.0625em #ca2b55;
+    transition: background-color .2s linear;
+}
+
+button:hover{
+    background: rgba(255, 57, 110, 0.7);
+}
+
+/*HARTJE INTERACTIE*/
+
+.hartje img{
+    height: 1.5em;
+    box-shadow: none;
+    display: block;
+    padding-left: 1.563em;
+}
+
+.hartje{
+    background-color: transparent;
+    color: #fff;
+    border-radius:0;
+    border:none;
+    padding-left: 1.563em;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom:0;
+    line-height: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding:0;
+    font-size: 0.938em;
+    box-shadow: 0 0em 0em 0 #eddacc;
+    transition: background-color .2s linear;
+}
+
+/* HEADER HART ANIMATIE */
+#gevuld-hartje.animate {
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+
+/* HEART BEAT ANIMATIE*/
+@keyframes beat{
+    to { transform: scale(1.4); }
+}
+
+.hartje:hover{
+    background: transparent;
+}
+
+/*LOADER ANIMATIE
+BRON: W3C SCHOOL
+*/
+#loader {
+  border: 1.000em solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1.000em solid #ff396e;
+  width: 7.500em;
+  height: 7.500em;
+  display: none;
+}
+
+#loader.animate {
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 2s linear infinite;
+  display: block;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*JEROEN KRABBE*/
+
+#jeroenkrabbe img{
+    width: 100%;
+     box-shadow: 0 0em 0em 0 #eddacc;
+}
+
+#jeroenkrabbe img:nth-child(2){
+    display: none;
+}
+
+#jeroenkrabbe img:nth-child(3){
+    display: none;
+}
+
+@media only screen and (max-width: 26.563em) {
+    #jeroenkrabbe img:nth-child(1){
+        display: none;
+    }
+    
+    #jeroenkrabbe img:nth-child(2){
+        display:none;
+    }
+    
+    #jeroenkrabbe img:nth-child(3){
+        display:block;
+            padding-top: 3.750em;
+    }
+}
+
+@media only screen and (max-width: 48.000em) {
+    #jeroenkrabbe img:nth-child(1){
+        display: none;
+    }
+    
+    #jeroenkrabbe img:nth-child(2){
+        display:block;
+         padding-top: 3.750em;
+    }
+    
+    #jeroenkrabbe img:nth-child(3){
+        display:none;
+    }
+}
+
+/*GEFRUSTREERD*/
+
+#gefrustreerd img{
+    width: 100%;
+     box-shadow: 0 0em 0em 0 #eddacc;
+}
+
+#gefrustreerd img:nth-child(2){
+    display: none;
+}
+
+#gefrustreerd img:nth-child(3){
+    display: none;
+}
+
+@media only screen and (max-width: 26.563em) {
+    #gefrustreerd img:nth-child(1){
+        display: none;
+    }
+    
+    #gefrustreerd img:nth-child(2){
+        display:none;
+    }
+    
+    #gefrustreerd img:nth-child(3){
+        display:block;
+            padding-top: 3.750em;
+    }
+}
+
+@media only screen and (max-width: 48.000em) {
+    #gefrustreerd img:nth-child(1){
+        display: none;
+    }
+    
+    #gefrustreerd img:nth-child(2){
+        display:block;
+         padding-top: 3.750em;
+    }
+    
+    #gefrustreerd img:nth-child(3){
+        display:none;
+    }
+}
+
+/*PARANOIA*/
+
+#paranoia img{
+    width: 100%;
+     box-shadow: 0 0em 0em 0 #eddacc;
+}
+
+#paranoia img:nth-child(2){
+    display: none;
+}
+
+#paranoia img:nth-child(3){
+    display: none;
+}
+
+@media only screen and (max-width: 26.563em) {
+    #paranoia  img:nth-child(1){
+        display: none;
+    }
+    
+    #paranoia  img:nth-child(2){
+        display:none;
+    }
+    
+    #paranoia img:nth-child(3){
+        display:block;
+            padding-top: 3.750em;
+    }
+}
+
+@media only screen and (max-width: 48.000em) {
+    #paranoia  img:nth-child(1){
+        display: none;
+    }
+    
+    #paranoia  img:nth-child(2){
+        display:block;
+         padding-top: 3.750em;
+    }
+    
+    #paranoia  img:nth-child(3){
+        display:none;
+    }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transavia</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+  <div id="sticky-header">
+       <header>
+           <div>
+               <img src="images/icons/transavialogo.svg" alt="facebook">
+               <h1>Transavia</h1>
+           </div>
+
+            <nav id="header"> 
+                <ul>
+                   <li><a href="#"> <img src="images/icons/hartje.png" id="gevuld-hartje" alt="hartje icoon"></a></li>
+                    <li><a href="formulierpagina.html"><img src="images/profiel.png" alt="profiel"></a></li>
+                    <li><a href="index.html"><img src="images/icons/huisje.png" alt="homeknop"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="bovenkant">
+           <section>
+                <h2>Lees verder</h2>
+                <article class="zombie">
+                    <div>
+                        <a href="#"><img src="images/zombie.jpg" alt="klok"></a>
+                        <h3>Zombie</h3>
+                    </div>
+                   <div>
+                       <a href="#"><img src="images/icons/star3.png" alt="klok"></a>
+                       <a href="#" class="lees-verder">Lees verder</a> 
+                    </div>
+                </article>  
+           </section>
+           <section>
+               <h2>Aanbevolen</h2>
+               <div>
+                    <article>
+                        <div>
+                        <a href="#"><img src="images/zoon.jpg" alt="brood"></a>
+                        <h3>Zoon</h3>
+                        </div>
+                        <div><p> 
+                        Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum. Boe?Boe? Hjmwhumwhum...</p>
+                        <a href="#" class="lees-verder">Lees meer</a>
+                        </div>
+                    </article>
+                    <article>
+                       <div>
+                        <a href="#"><img src="images/telegrafie.jpg" alt="brood"></a>
+                        <h3>Telegrafisch</h3>
+                        </div>
+                        <div>
+                        <p> US STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND MENSEN IN ZICHZELF GEKEERD STOP MODDERIGE TERINGZOOI HIER STOP DRILBOREN EN...</p>
+                        <a href="#" class="lees-verder">Lees meer</a>
+                        </div>
+                    </article>
+                </div>
+           </section>
+        </div>
+        
+        <ul class="keuzemenu">
+            <li class="sorteren"><a id="buttonSorterenModal">Sorteren</a></li>
+            <li class="filteren"><a id="buttonFilterenModal">Filter</a></li>
+            <li class="zoeken"><a id="buttonZoekenModal">Zoeken</a></li>
+        </ul>
+        
+        
+        <!-- SORTEREN MODAL - SOURCE: https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- Trigger/Open The Modal -->
+        <!--<button id="buttonSorterenModal">Open Modal</button>-->
+
+        <!-- The Modal -->
+        <div id="sorterenModal" class="modal">
+
+        <!-- Modal content -->
+            <div class="modal-content">
+            <span class="sorterenClose">&times;</span>
+                <section id="sorteren">
+                   <h2>Sorteer op</h2>
+                    <ul>
+                        <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/nieuw.png" alt="" style="border:none;"></a><h3> Nieuw</h3></li>
+                        <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/a-z.png" alt="" style="border:none;"></a><h3>A t/m Z</h3></li>
+                        <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/p.png" alt="" style="border:none;"></a><h3>Meest populiar</h3></li>
+                    </ul>       
+                </section>
+            <button id="sorterenB">Bevestig </button>
+            <div id="loader"></div>
+
+            </div>
+        
+        </div>
+        <a id="terug" href="index.html"></a>
+        
+        
+        <!-- FILTER MODAL - SOURCE: https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- Trigger/Open The Modal -->
+        <!--<button id="buttonFilterenModal">Open Modal</button>-->
+
+        <!-- The Modal -->
+        <div id="filterenModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="filterenClose">&times;</span>
+            <section id="filteren">
+            <h2>Filteren</h2>
+            <section>
+               <h2>Categorie</h2>
+                <ul id="categories">
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/negatief.png" alt="" style="border:none;"></a><h3>Negatief</h3></li>
+                    <li><a href="#"><img  onclick="addBorderOnImage(this)" src="images/conversatie.png" alt="" style="border:none;"></a><h3>Conversatie</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/imitatie.png" alt="" style="border:none;"></a><h3>Imitatie</h3></li>
+                </ul> 
+                <h2>Voor de kleintjes</h2>
+                <ul id="kinderen">
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/fantasie.png" alt="" style="border:none;"></a><h3>Fantasie</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/personage.png" alt="" style="border:none;"></a><h3>Personage</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/gedicht.png" alt="" style="border:none;"></a><h3>Gedicht</h3></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Leeftijd</h2>
+                <ul id="leeftijd">
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/3-12.png" alt="" style="border:none;"></a><h3>3-12</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/12-18.png" alt="" style="border:none;"></a><h3>12-18</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/18.png" alt="" style="border:none;"></a><h3>18+</h3></li>
+                </ul>
+            </section>
+            <section>
+               <h2>Lengte</h2>
+                <ul id="lengte">
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/5.png" alt="" style="border:none;"></a><h3>5 min</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/10.png" alt="" style="border:none;"></a><h3>10 min</h3></li>
+                    <li><a href="#"><img onclick="addBorderOnImage(this)" src="images/30.png" alt="" style="border:none;"></a><h3>30 min</h3></li>
+                </ul> 
+            </section>
+        </section>
+         
+         <button id="filterenBevestig">Bevestig</button>
+          </div>
+
+        </div>
+        
+        <!-- ZOEKEN MODAL - SOURCE: https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- Trigger/Open The Modal -->
+        <!--<button id="buttonZoekenModal">Open Modal</button>-->
+
+        <!-- The Modal -->
+        <div id="zoekenModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="zoekenClose">&times;</span>
+            <section id="zoeken">
+             <h2>Zoekbalk</h2>
+              <input type="text" name="search" placeholder="Zoeken..">
+              </section>
+              <button id="zoekenB">Zoek</button>
+            </div>
+            </div>
+        
+        <!--filterlist-->
+        
+        <section id="selectedFilters">
+            <h2>Gekozen filters</h2>
+            <ul id="filterList"></ul>
+        </section>
+        
+        <!--verhalen-->
+        <section class="stories2">
+          <h2>Resultaten</h2>
+            <ul class="stories">
+                <li class="list">
+                   <div>
+                      <a href="paranoia.html"><img src="images/paranoia.jpg" alt=""></a> 
+                      <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                    <div>
+                       <h4>Paranoia</h4>
+                        <img src="images/icons/oog4.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                    </div>
+                </li>
+                
+                <li class="list">
+                  <div>
+                       <a href="jeroenkrabbe.html"><img src="images/jeroenkrabbe.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                        <h4>Jeroen Krabbe</h4>
+                            <img src="images/icons/oog1.png" alt="oog">
+                            <img src="images/icons/star2.png" alt="oog">
+                    </div>
+                </li>
+                
+                <li class="list">
+                    <div>
+                       <a href="gefrustreerd.html"><img src="images/gefrustreerd.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                    </div>
+                    <div>
+                        <h4>Gefrustreerd</h4>
+                        <img src="images/icons/oog5.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                    </div>
+                </li>
+                
+                <li class="list">
+                   <div>
+                       <a href="#"><img src="images/venz.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                        <h4>Van vader tot zoon</h4>
+                        <img src="images/icons/oog6.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                   </div>
+                </li>
+                
+                
+                <li class="list">
+                   <div>
+                       <a href="#"><img src="images/gebrek.jpg" alt=""></a>
+                      <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                    <h4>Het gebrek</h4>
+                        <img src="images/icons/oog7.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                    </div>
+                </li>
+                
+                
+                <li class="list">
+                  <div>
+                       <a href="#"><img src="images/bejaard.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                        <h4>Bejaard</h4>
+                        <img src="images/icons/oog3.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                   </div>
+                </li>
+                
+                
+                <li class="list">
+                  <div>
+                       <a href="#"><img src="images/verrasing.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                        <h4>Verrassing</h4>
+                        <img src="images/icons/oog9.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                    </div>
+                </li>
+                
+                
+                <li class="list">
+                  <div>
+                       <a href="#"><img src="images/beroemd.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                        <h4>Beroemd</h4>
+                        <img src="images/icons/oog9.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                   </div>
+                </li>
+                
+                <li class="list">
+                  <div>
+                       <a href="#"><img src="images/moe.jpg" alt=""></a>
+                       <button class="hartje"><img src="images/icons/hartjeleeg.png" alt=""></button>
+                   </div>
+                   <div>
+                        <h4>Moe</h4>
+                        <img src="images/icons/oog2.png" alt="oog">
+                        <img src="images/icons/star2.png" alt="oog">
+                   </div>
+                </li>
+                
+             </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <a>Algemene voorwaarden</a>
+        <a>Over ons</a>
+        <a href="index2.html">Transavia</a>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
